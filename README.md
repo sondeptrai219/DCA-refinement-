@@ -1,3 +1,4 @@
+EVERYTHING HERE IS A BASE INSTEAD OF REAL RESEARCH, REAL RESEARCH WILL BE PROVIDED ON DEMAND: hoanhson219@gmail.com
 # DCA-refinement-
 DCA strat refinment using price data, specialized for vn30 derivatives, and ETF DCVFMVN30
 <div align="center">
@@ -14,8 +15,6 @@ DCA strat refinment using price data, specialized for vn30 derivatives, and ETF 
 ![License](https://img.shields.io/badge/License-Academic-lightgrey)
 
 </div>
-
----
 
 ## 🧠 Tổng quan đề tài
 
@@ -108,10 +107,6 @@ Ví dụ:
 | 2024-01-02 | 1195.2 |
 | 2024-01-03 | 1188.0 |
 
-Nếu dữ liệu thật quá ngắn, notebook tự tạo thêm bộ **VN30_DEMO_312D** để toàn bộ pipeline vẫn chạy được.  
-Bộ demo chỉ dùng để kiểm tra code, không dùng làm kết luận đầu tư.
-
----
 
 ## 🔢 Markov Chain trong dự án
 
@@ -146,9 +141,7 @@ Xác suất giảm 5 ngày liên tiếp theo logic Markov có thể được ư�
 P(\text{5 ngày giảm}) = P(G \rightarrow G)^4
 \]
 
-> Lưu ý nhỏ nhưng đau đớn: nếu đã có ngày giảm đầu tiên, để có 5 ngày giảm liên tiếp thì cần thêm 4 lần chuyển tiếp `G -> G`, không phải 3 lần. Toán học thỉnh thoảng cũng thích phá buổi chiều.
 
----
 
 ## 📉 Logic DCA được kiểm tra
 
@@ -330,10 +323,9 @@ P(G -> T) = 54.2%
 > Không nên chỉ nhìn xác suất chuỗi giảm liên tiếp tuyệt đối.  
 > Cần kiểm tra cả tần suất xuất hiện các cụm giảm trong khoảng thời gian giao dịch thực tế.
 
-Vì vậy, DCA trong 3 ngày có thể chưa đủ tốt.  
+
 Chiến lược hợp lý hơn là rải vốn trong **5-6 ngày**, cách **2 ngày/lần**, sau đó dùng backtesting để xác nhận.
 
----
 
 ## ✅ Checklist hoàn thành
 
@@ -361,9 +353,6 @@ Dự án hiện tại vẫn có một số giới hạn:
 5. Chưa có quản trị vốn nâng cao.
 6. Chưa kiểm định thống kê sâu như walk-forward validation hoặc bootstrap.
 
-Không có các phần này mà gọi là “chiến lược chắc thắng” thì hơi giống bán khóa học làm giàu bằng biểu đồ nến, một thể loại nghệ thuật biểu diễn rất dai dẳng.
-
----
 
 ## 🔮 Hướng phát triển
 
@@ -376,14 +365,6 @@ Không có các phần này mà gọi là “chiến lược chắc thắng” t
 - Kết hợp thêm RSI, MA, MACD để xác nhận tín hiệu.
 - Tối ưu chiến lược theo drawdown thay vì chỉ lợi nhuận.
 
----
-
-## 📌 Kết luận
-
-Dự án cho thấy Markov Chain có thể dùng để mô hình hóa đơn giản hành vi tăng/giảm của thị trường.  
-Từ đó, chiến lược DCA không nên được thiết kế cảm tính, mà cần được kiểm tra bằng dữ liệu lịch sử.
-
-Kết quả ban đầu gợi ý rằng:
 
 > DCA trong 5-6 ngày, cách 2 ngày/lần, là hướng hợp lý hơn DCA dồn trong 3 ngày khi thị trường xuất hiện cụm giảm.
 
