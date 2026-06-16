@@ -28,11 +28,6 @@ Từ kết quả đó, notebook thực hiện **backtesting nhiều chiến lư�
 | **Markov DCA tối ưu** | Khi xuất hiện cụm giảm, mua trong 5-6 ngày, cách 2 ngày/lần |
 | **Grid Search DCA** | Tự thử nhiều bộ tham số để tìm cấu hình tốt hơn |
 
-Mục tiêu không phải là “dự đoán tương lai chắc chắn”, vì thị trường mà nghe lời chắc chắn thì ai cũng giàu rồi và Excel đã thành ngân hàng trung ương.  
-Mục tiêu thực tế hơn là **kiểm tra xem logic DCA nào hợp lý hơn trên dữ liệu lịch sử**.
-
----
-
 ## 🎯 Mục tiêu nghiên cứu
 
 Dự án tập trung trả lời các câu hỏi:
@@ -325,22 +320,6 @@ P(G -> T) = 54.2%
 
 
 Chiến lược hợp lý hơn là rải vốn trong **5-6 ngày**, cách **2 ngày/lần**, sau đó dùng backtesting để xác nhận.
-
-
-## ✅ Checklist hoàn thành
-
-- [x] Tách code thành từng bước rõ ràng trong Jupyter Notebook.
-- [x] Thêm comment giải thích từng phần.
-- [x] Kiểm tra lại logic Markov Chain.
-- [x] Thêm phân tích chuỗi giảm liên tiếp.
-- [x] Thêm backtest DCA thông thường.
-- [x] Thêm backtest DCA theo tín hiệu giảm.
-- [x] Thêm chiến lược DCA 5-6 ngày, 2 ngày/lần.
-- [x] Thêm tối ưu tham số DCA.
-- [x] Xuất kết quả ra Excel.
-- [x] Viết README theo format GitHub.
-
----
 
 ## ⚠️ Giới hạn
 
